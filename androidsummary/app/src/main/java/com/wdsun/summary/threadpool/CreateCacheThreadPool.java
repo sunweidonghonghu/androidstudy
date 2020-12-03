@@ -1,10 +1,11 @@
-package material.danny_jiang.com.bmwtest.course11;
+package com.wdsun.summary.threadpool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+
 /**
- * Created by Danny 姜.
+ * 缓存线程
  */
 public class CreateCacheThreadPool {
     public static void main(String[] args) throws InterruptedException{
@@ -17,7 +18,7 @@ public class CreateCacheThreadPool {
                 public void run() {
                     try {
                         System.out.println("线程：" + Thread.currentThread().getName()
-                                + " 正在执行 task: " + taskId);
+                                + " 正在执行 的 task: " + taskId);
                         Thread.sleep(500);
                     } catch (InterruptedException ignored) {
                     }
